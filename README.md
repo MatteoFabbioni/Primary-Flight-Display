@@ -28,15 +28,16 @@ _La schermata è stata acquisita dal progetto realizzato._
 
 _Le schermata sono state acquisite dal progetto realizzato._
 
-| Mirino| Orizzonte| Scala del Pitch | PFD| 
-| ------------ | ------------ | ------------ | ------------ | 
+
+
 | <img src="https://github.com/vittorioPiotti/Primary-Flight-Display/blob/main/project/screenshots/Viewfinder.png" alt="Icona" width="200"/> | <img src="https://github.com/vittorioPiotti/Primary-Flight-Display/blob/main/project/screenshots/Horizon.png" alt="Icona" width="200"/> | <img src="https://github.com/vittorioPiotti/Primary-Flight-Display/blob/main/project/screenshots/PitchLadder.png" alt="Icona" width="200"/>| <img src="https://github.com/vittorioPiotti/Primary-Flight-Display/blob/main/project/screenshots/Display.png" alt="Icona" width="200"/>| 
+| ------------ | ------------ | ------------ | ------------ | 
 |1| 2 | 3 |  4 |
 
-1. Mirino 
-2. Orizzonte 
-3. Scala del Pitch
-4. PFD Display Aereo
+1. Mirino `Viewfinder.py` ([link](https://github.com/vittorioPiotti/Primary-Flight-Display/blob/main/project/source/src/Viewfinder.py))
+2. Orizzonte `Horizon.py`([link](https://github.com/vittorioPiotti/Primary-Flight-Display/blob/main/project/source/src/Horizon.py))
+3. Scala del Pitch `PitchLadder.py` ([link](https://github.com/vittorioPiotti/Primary-Flight-Display/blob/main/project/source/src/PitchLadder.py))
+4. PFD Display Aereo `display.py` ([link](https://github.com/vittorioPiotti/Primary-Flight-Display/blob/main/project/source/display.py))
 
 ### Copyright
 
@@ -94,6 +95,13 @@ Comunicazione con server Python:
   -  Comunicazione tramite socket
   -  Architettura Client-Server
 
+### Note sul Codice
+
+  1. Il codice è stato sviluppato in modo **compartimentato e modulare**.
+  2. È stata garantita una corretta **separazione dei compiti**
+  3. Sono stati sviluppati i **componenti grafici in classi autonome**
+  4. Il codice ha quindi la qualità di essere **scalabile e manutentibile**
+
 
 ### Testing
 
@@ -104,23 +112,23 @@ Comunicazione con server Python:
 > | ------------ | ------------ | ------------ | ------------ | 
 > |1| 2 | 3 | 4 |
 > 
-> 1. Mirino `Test_Viewfinder.py`
-> 2. Orizzonte `Test_Horizon.py`
-> 3. Scala del Pitch `Test_PitchLadder.py`
-> 4. Calcoli `Test_Calc.py`
+> 1. Mirino `Test_Viewfinder.py` ([link](https://github.com/vittorioPiotti/Primary-Flight-Display/blob/main/project/source/test/Test_Viewfinder.py))
+> 2. Orizzonte `Test_Horizon.py` ([link](https://github.com/vittorioPiotti/Primary-Flight-Display/blob/main/project/source/test/Test_Horizon.py))
+> 3. Scala del Pitch `Test_PitchLadder.py`  ([link](https://github.com/vittorioPiotti/Primary-Flight-Display/blob/main/project/source/test/Test_PitchLadder.py))
+> 4. Calcoli `Test_Calc.py` ([link](https://github.com/vittorioPiotti/Primary-Flight-Display/blob/main/project/source/test/Test_Calc.py))
 
 
 
 > [!WARNING]
-> MACOS ([video](https://drive.google.com/file/d/1O2NUyQX6dreFDlOx4WhHrVpao1NMTTvo/view))
-> Tutti i test hanno dato **esito positivo** garantendo la **stabiità del software** solo se **coefficiente angolare valido**
+> MacOS ([video](https://drive.google.com/file/d/1O2NUyQX6dreFDlOx4WhHrVpao1NMTTvo/view))
+> Tutti i test hanno dato **esito positivo** garantendo la **stabiità del software** solo se il **coefficiente angolare valido**
 
 > [!WARNING]
-> Rivedere ed ottimizzare la logica dei componenti grafici per visualizzare `PitchLadder.py`
+> Rivedere ed ottimizzare la logica dei componenti grafici per visualizzare il `PitchLadder.py`
 
 
 > [!CAUTION]
-> `Fatal Error` se valore del **coefficiente angolare non valido** in quanto non è stato implementato **nessun controllo per gestire questa casistica**
+> `Fatal Error` se il valore del **coefficiente angolare non valido** in quanto non è stato implementato **nessun controllo per gestire questo caso**
 
 
 
@@ -146,6 +154,7 @@ Comunicazione con server Python:
 
           pip install tk
 
+3. Caricare i file sorgenti eventualmente sostituendo quelli già presenti
 
 
 ### Albero di Path
@@ -178,7 +187,7 @@ $ tree
 
 - [Diego Ciucaloni](https://github.com/Diego-ciuck)
 - [Luca Niccià](https://github.com/lucaniccia)
-- [Fabbioni Matteo](https://github.com/MatteoFabbioni)
+- [Matteo Fabbioni](https://github.com/MatteoFabbioni)
 - [Vittorio Piotti](https://github.com/vittorioPiotti)
 
 ## Sviluppi Futuri
